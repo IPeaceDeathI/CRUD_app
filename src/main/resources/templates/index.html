@@ -1,10 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 </head>
 <body>
-$END$
+<header th:insert="blocks/header :: header"></header>
+<script>
+    var currentPage = document.querySelector("#home-page")
+    currentPage.classList.add("active")
+    currentPage.setAttribute("aria-current", "page")
+</script>
+<main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Автосалон Boyko Motors</h1>
+                <p class="lead text-body-secondary">Что-то короткое и важное об автосалоне, диллерах и т. д. Эта информация краткая и приятная, но не слишком короткая, чтобы люди просто не пропустили её полностью.</p>
+                <p>
+                    <a href="/clients/new" class="btn btn-primary my-2">Сделать заказ</a>
+                    <a href="/cars" class="btn btn-secondary my-2">К новостям</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-body-tertiary" style="background-color: #e9ecef">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                        </svg>
+<!--                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>-->
+                        <div class="card-body">
+                            <p class="card-text">Этот автомобиль славится своей скоростью и надежностью. Разгон до 100км/ч за 5 секунд. Автомобиль имеет международный сертификат качества./p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                                <small class="text-body-secondary">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-body-secondary py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Вернуться на верх</a>
+        </p>
+        <p class="mb-1">Немного информации о сайте автосалона</p>
+        <p class="mb-0">Впервые на сайте? <a href="/">Посетите главную страницу</a></p>
+    </div>
+</footer>
 </body>
 </html>

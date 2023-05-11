@@ -13,13 +13,13 @@
   currentPage.setAttribute("aria-current", "page")
 </script>
 <div class="container mt-5 mb-5">
-  <h1>Редактирование</h1>
-  <div th:each="el : ${car}">
+  <h1 class="text-center">Редактирование</h1>
+  <div th:each="el : ${car} ">
     <form method="post">
       <input type="text" th:value="${el.title}" name="title" placeholder="Название" class="form-control"><br>
       <input type="text" th:value="${el.anons}" name="anons" placeholder="Краткая информация" class="form-control"><br>
       <textarea name="full_text" placeholder="Полное описание" class="form-control" th:text="${el.full_text}"/><br>
-      <button type="submit" class="btn btn-success">Обновить</button>
+      <button type="submit" class="btn btn-outline-success">Обновить</button>
     </form>
   </div>
 </div>

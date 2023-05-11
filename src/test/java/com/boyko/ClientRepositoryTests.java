@@ -48,14 +48,14 @@ public class ClientRepositoryTests {
 
     @Test
     public void testUpdate() {
-        Integer clientId = 17;
+        Integer clientId = 20;
         Optional<Client> optionalClient = repo.findById(clientId);
         Client client = optionalClient.get();
-        client.setPassword("123hi321");
+        client.setFirstName("Denis");
         repo.save(client);
 
         Client updatedClient = repo.findById(clientId).get();
-        Assertions.assertThat(updatedClient.getPassword()).isEqualTo("123hi321");
+        Assertions.assertThat(updatedClient.getFirstName()).isEqualTo("Denis");
     }
 
     @Test
@@ -90,7 +90,7 @@ public class ClientRepositoryTests {
 
     @Test
     public void testDeleteNews() {
-        int newsId = 352;
+        int newsId = 502;
         carRepository.deleteById((long) newsId);
 
         Optional<Car> optionalCar = carRepository.findById((long) newsId);
@@ -99,7 +99,7 @@ public class ClientRepositoryTests {
 
     @Test
     public void testNewsUpdate() {
-        int newsId = 352;
+        int newsId = 502;
         Optional<Car> optionalCar = carRepository.findById((long) newsId);
         Car car = optionalCar.get();
         car.setTitle("Changed Title");

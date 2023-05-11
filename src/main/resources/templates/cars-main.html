@@ -13,11 +13,11 @@
   currentPage.setAttribute("aria-current", "page")
 </script>
 <div class="container mt-5">
-  <h1>Новости</h1>
-  <div th:each="el : ${cars}" class="alert alert-info mt-2">
+  <h1 class="text-center">Новости</h1>
+  <div th:each="el : ${cars}" class="alert mt-2 bg-opacity-25 bg-info">
     <h3 th:text="${el.title}"/>
     <p th:text="${el.anons}"/>
-    <a th:href="'/cars/' + ${el.id} " class="btn btn-warning">Детальнее</a>
+    <a th:href="'/cars/' + ${el.id} " class="btn btn-outline-success">Детальнее</a>
   </div>
 </div>
 
